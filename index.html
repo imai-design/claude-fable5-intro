@@ -10,7 +10,7 @@
 <meta property="og:description" content="100万トークンの記憶・自分で決める思考の深さ・長い仕事への強さ。新モデル Fable 5 本人による自己紹介スライド。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://imai-design.github.io/claude-fable5-intro/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop offset=%220%22 stop-color=%22%236aa6ff%22/><stop offset=%221%22 stop-color=%22%23d08bff%22/></linearGradient></defs><text x=%2218%22 y=%2284%22 font-size=%2296%22 font-family=%22Helvetica,Arial,sans-serif%22 font-weight=%22600%22 fill=%22url(%23g)%22>5</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -166,7 +166,6 @@ header.bar .logo{
   font-family:var(--display); font-weight:500; font-size:15px; letter-spacing:-0.01em;
   margin-right:auto; display:flex; align-items:center; gap:9px; color:var(--ink);
 }
-header.bar .logo .m{font-size:15px;}
 header.bar .logo .nm{font-weight:600; letter-spacing:.02em;}
 header.bar a.hbtn,header.bar button{
   font:inherit; font-family:var(--font); font-size:12.5px; font-weight:500; cursor:pointer;
@@ -267,7 +266,7 @@ html.js .rv.in{opacity:1; transform:none;}
 .card::before{content:""; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,var(--line-strong),transparent); opacity:0; transition:opacity .3s;}
 .card:hover{background:var(--surface-2);}
 .card:hover::before{opacity:1;}
-.card .ic{font-size:26px; line-height:1; opacity:.9;}
+.card .ic{font-family:var(--mono); font-size:12px; letter-spacing:.16em; color:var(--ink-faint);}
 .card h3{margin:20px 0 10px;}
 .card p{color:var(--ink-2); font-size:14.5px; line-height:1.85; font-weight:400;}
 
@@ -311,7 +310,6 @@ html.js .rv.in{opacity:1; transform:none;}
 .kpi-hero .unit{font-size:clamp(22px,3.2vw,38px); -webkit-text-fill-color:transparent; font-weight:400;}
 .kpi-hero .cap{color:var(--ink-2); margin-top:18px; font-size:15px;}
 .kpi-hero .cap b{color:var(--ink); font-weight:500;}
-.books{font-size:28px; letter-spacing:7px; margin-top:18px; opacity:.85;}
 
 /* ============================================================
    benchmark bars（施策3）— 定性「能力イメージ」。Fable 5だけ発光
@@ -504,7 +502,7 @@ footer a:hover{color:var(--ink);}
 <div class="progress" id="progress"></div>
 
 <header class="bar">
-  <span class="logo"><span class="m">🌙</span> Claude <span class="nm grad">FABLE&nbsp;5</span></span>
+  <span class="logo">Claude <span class="nm grad">FABLE&nbsp;5</span></span>
   <a class="hbtn" href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">公式発表 <span class="arr">↗</span></a>
   <button onclick="window.print()">PDF</button>
 </header>
@@ -524,9 +522,9 @@ footer a:hover{color:var(--ink);}
     <h1 class="rv" data-d="2">はじめまして。<br>私が、新しいClaude。</h1>
     <p class="sub rv" data-d="3">Anthropic が今いちばん賢くしたAI。<br>難しくて長い仕事を任せたいとき、あなたの相棒になります。</p>
     <div class="meta rv" data-d="4">
-      <span>⚡ <b>いま最高クラスの性能</b></span>
-      <span>🧠 本2〜3冊ぶんの<b>記憶</b></span>
-      <span>🔭 長い仕事に<b>強い</b></span>
+      <span><b>いま最高クラスの性能</b></span>
+      <span>本2〜3冊ぶんの<b>記憶</b></span>
+      <span>長い仕事に<b>強い</b></span>
     </div>
     <div class="scrollcue rv" data-d="5">scroll<span class="line"></span></div>
   </div>
@@ -539,7 +537,7 @@ footer a:hover{color:var(--ink);}
     <span class="eyebrow rv">Conclusion First</span>
     <h2 class="rv" data-d="1">難しくて長い仕事ほど、<br><span class="grad">私の出番</span>です。</h2>
     <p class="lead rv" data-d="2">一気には片づかない大きな調べもの。原因さがし。腰を据える作業。<br>そういう「重たい一個」を、まるごと任せてください。</p>
-    <div class="note rv" data-d="3"><span class="k">Tip</span>💡 <b>使い分けのコツ</b>：簡単なことは、速くて軽いAIに任せてOK。私は“ここぞ”のときに呼んでください。</div>
+    <div class="note rv" data-d="3"><span class="k">Tip</span><b>使い分けのコツ</b>：簡単なことは、速くて軽いAIに任せてOK。私は“ここぞ”のときに呼んでください。</div>
   </div>
 </section>
 
@@ -552,7 +550,7 @@ footer a:hover{color:var(--ink);}
     <p class="lead rv" data-d="2">どちらが上、というより「得意が違う」。だから使い分けるのが、いちばん賢いです。</p>
     <div class="vs-grid rv" data-d="3">
       <div class="vs-card me">
-        <div class="who">🌙 Fable 5 <span class="tag">わたし</span></div>
+        <div class="who">Fable 5 <span class="tag">わたし</span></div>
         <ul>
           <li><b>いちばん高性能。</b>性能の天井がほしいときに</li>
           <li>長くて難しい、腰を据える仕事が得意</li>
@@ -562,7 +560,7 @@ footer a:hover{color:var(--ink);}
       </div>
       <div class="vs-mid"><span class="vs-badge">VS</span></div>
       <div class="vs-card op">
-        <div class="who">🧭 Opus 4.8 <span class="tag">相棒</span></div>
+        <div class="who">Opus 4.8 <span class="tag">相棒</span></div>
         <ul>
           <li><b>バランス型の最上位。</b>賢さと速さの両立</li>
           <li>複雑な考えごと全般を軽快にこなす</li>
@@ -571,7 +569,7 @@ footer a:hover{color:var(--ink);}
         </ul>
       </div>
     </div>
-    <div class="note rv" data-d="4"><span class="k">Verdict</span>💡 <b>結論</b>：普段は Opus 4.8、ここぞの難所で Fable 5。記憶の大きさ（本2〜3冊ぶん＝100万トークン）は、どちらも同じです。</div>
+    <div class="note rv" data-d="4"><span class="k">Verdict</span><b>結論</b>：普段は Opus 4.8、ここぞの難所で Fable 5。記憶の大きさ（本2〜3冊ぶん＝100万トークン）は、どちらも同じです。</div>
   </div>
 </section>
 
@@ -583,9 +581,9 @@ footer a:hover{color:var(--ink);}
     <h2 class="rv" data-d="1">得意なことは、<span class="grad">3つ</span>。</h2>
     <p class="lead rv" data-d="2">いま誰でも使えるClaudeの中で、いちばん性能の高いモデルです。<br>2026年6月9日に登場しました。</p>
     <div class="grid">
-      <div class="card rv" data-d="1"><div class="ic">🧠</div><h3>たくさん覚えていられる</h3><p>長い資料も、丸ごと頭に入れて考えられます。話の筋を見失いません。</p></div>
-      <div class="card rv" data-d="2"><div class="ic">⚡</div><h3>考える深さを自分で決める</h3><p>軽い質問は速く、難問はじっくり。場面ごとに私自身が調整します。</p></div>
-      <div class="card rv" data-d="3"><div class="ic">🔭</div><h3>長い仕事に強い</h3><p>調べてから動き、自分で見直す。だから迷子になりにくい。</p></div>
+      <div class="card rv" data-d="1"><div class="ic">01</div><h3>たくさん覚えていられる</h3><p>長い資料も、丸ごと頭に入れて考えられます。話の筋を見失いません。</p></div>
+      <div class="card rv" data-d="2"><div class="ic">02</div><h3>考える深さを自分で決める</h3><p>軽い質問は速く、難問はじっくり。場面ごとに私自身が調整します。</p></div>
+      <div class="card rv" data-d="3"><div class="ic">03</div><h3>長い仕事に強い</h3><p>調べてから動き、自分で見直す。だから迷子になりにくい。</p></div>
     </div>
     <!-- benchmark（定性・相対イメージ）施策3 -->
     <div class="bench rv" data-d="4" id="bench">
@@ -615,14 +613,13 @@ footer a:hover{color:var(--ink);}
 </section>
 
 <!-- 05 強み1 記憶 -->
-<section id="s5" data-t="強み① 記憶">
+<section id="s5" data-t="強み1 記憶">
   <span class="secno">05</span>
   <div class="wrap center">
     <span class="eyebrow rv">Capability 01 · Memory</span>
-    <h2 class="rv" data-d="1">🧠 たくさんのことを、<br>一度に覚えていられる。</h2>
+    <h2 class="rv" data-d="1">たくさんのことを、<br>一度に覚えていられる。</h2>
     <div class="kpi-hero rv" data-d="2">
       <div class="big"><span id="counter">0</span><span class="unit">万トークン</span></div>
-      <div class="books">📕📗📘</div>
       <p class="cap">だいたい<b>本2〜3冊ぶん</b>を、一度に頭に入れたまま考えられます。</p>
     </div>
     <p class="lead rv" data-d="3">長い資料でも、プログラム全体でも。<br>全部を見渡しながら、話の筋を見失わずに考えられます。</p>
@@ -630,27 +627,27 @@ footer a:hover{color:var(--ink);}
 </section>
 
 <!-- 06 強み2 考える深さ -->
-<section id="s6" data-t="強み② 思考の深さ">
+<section id="s6" data-t="強み2 思考の深さ">
   <span class="secno">06</span>
   <div class="wrap center">
     <span class="eyebrow rv">Capability 02 · Adaptive Thinking</span>
-    <h2 class="rv" data-d="1">⚡ どれだけ考えるか、<br><span class="grad">自分で決める</span>。</h2>
+    <h2 class="rv" data-d="1">どれだけ考えるか、<br><span class="grad">自分で決める</span>。</h2>
     <p class="lead rv" data-d="2">質問の重さに合わせて、考える時間を私が自動で調整します。</p>
     <div class="meters rv" data-d="3" id="meters">
       <div class="meter"><div class="lbl"><b>軽い質問</b><span>サッと答える</span></div><div class="bar"><i></i></div></div>
       <div class="meter"><div class="lbl"><b>ふつうの相談</b><span>ほどよく考える</span></div><div class="bar"><i></i></div></div>
       <div class="meter"><div class="lbl"><b>難問</b><span>じっくり考え抜く</span></div><div class="bar"><i></i></div></div>
     </div>
-    <div class="note rv" data-d="4"><span class="k">Tip</span>💡 だから「ちゃんと考えてね」と毎回お願いしなくても、必要なぶんだけ自分で考えます。</div>
+    <div class="note rv" data-d="4"><span class="k">Tip</span>だから「ちゃんと考えてね」と毎回お願いしなくても、必要なぶんだけ自分で考えます。</div>
   </div>
 </section>
 
 <!-- 07 強み3 長い仕事 -->
-<section id="s7" data-t="強み③ 長い仕事">
+<section id="s7" data-t="強み3 長い仕事">
   <span class="secno">07</span>
   <div class="wrap center">
     <span class="eyebrow rv">Capability 03 · Long-Horizon Work</span>
-    <h2 class="rv" data-d="1">🔭 長い仕事を、<br><span class="grad">最後まで</span>任せられる。</h2>
+    <h2 class="rv" data-d="1">長い仕事を、<br><span class="grad">最後まで</span>任せられる。</h2>
     <p class="lead rv" data-d="2">ふつうなら細かく分けてお願いするような仕事も、まるごと渡して大丈夫です。</p>
     <div class="flow">
       <div class="fstep rv" data-d="1"><h4>まず、調べる</h4><p>いきなり動かない。状況を確かめてから始めます。</p></div>
@@ -658,7 +655,7 @@ footer a:hover{color:var(--ink);}
       <div class="fstep rv" data-d="3"><h4>自分で、見直す</h4><p>できたものを自分で検査。間違いに自分で気づきます。</p></div>
       <div class="fstep rv" data-d="4"><h4>最後まで、やり切る</h4><p>長い作業でも、途中で話の筋を見失いません。</p></div>
     </div>
-    <div class="note rv" data-d="5"><span class="k">Tip</span>💡 <b>コツ</b>：「やり方」ではなく「どうなってほしいか」を渡してください。道すじは私が考えます。</div>
+    <div class="note rv" data-d="5"><span class="k">Tip</span><b>コツ</b>：「やり方」ではなく「どうなってほしいか」を渡してください。道すじは私が考えます。</div>
   </div>
 </section>
 
@@ -667,16 +664,16 @@ footer a:hover{color:var(--ink);}
   <span class="secno">08</span>
   <div class="wrap center">
     <span class="eyebrow rv">Safety</span>
-    <h2 class="rv" data-d="1">🛡 危ない話題は、<br>自動でバトンタッチ。</h2>
+    <h2 class="rv" data-d="1">危ない話題は、<br>自動でバトンタッチ。</h2>
     <p class="lead rv" data-d="2">リスクのある話題は、私ではなく別の安全なAIが自動で引き取って答えます。</p>
     <div class="shield-flow rv" data-d="3">
-      <div class="sf-box"><span class="t">⚠️ あぶない話題</span><span class="d">サイバー攻撃のやり方、危険な物質の作り方 など</span></div>
+      <div class="sf-box"><span class="t">あぶない話題</span><span class="d">サイバー攻撃のやり方、危険な物質の作り方 など</span></div>
       <span class="sf-arrow">▶</span>
-      <div class="sf-box shield"><span class="t">🛡 自動で判定</span><span class="d">私は答えず、バトンを渡します</span></div>
+      <div class="sf-box shield"><span class="t">自動で判定</span><span class="d">私は答えず、バトンを渡します</span></div>
       <span class="sf-arrow">▶</span>
-      <div class="sf-box"><span class="t">🧭 Opus 4.8 が回答</span><span class="d">安全なかたちで引き取ります</span></div>
+      <div class="sf-box"><span class="t">Opus 4.8 が回答</span><span class="d">安全なかたちで引き取ります</span></div>
     </div>
-    <div class="note rv" data-d="4"><span class="k">Note</span>💡 これは決まったしくみで、あなたのアカウントに問題があるわけではありません。</div>
+    <div class="note rv" data-d="4"><span class="k">Note</span>これは決まったしくみで、あなたのアカウントに問題があるわけではありません。</div>
   </div>
 </section>
 
@@ -699,7 +696,7 @@ footer a:hover{color:var(--ink);}
         </span>
       </div>
     </div>
-    <div class="note rv" data-d="3"><span class="k">Caution</span>⚠ <b>ひとつだけ注意</b>：力が大きいぶん、使う費用（枠）は Opus 4.8 の約2倍。普段づかいは軽いモデル、ここぞの一個で私を呼ぶのがおすすめです。</div>
+    <div class="note rv" data-d="3"><span class="k">Caution</span><b>ひとつだけ注意</b>：力が大きいぶん、使う費用（枠）は Opus 4.8 の約2倍。普段づかいは軽いモデル、ここぞの一個で私を呼ぶのがおすすめです。</div>
   </div>
 </section>
 
@@ -731,9 +728,9 @@ footer a:hover{color:var(--ink);}
     <h2 class="rv" data-d="1">いちばん手こずってる<br>“<span class="grad">あの一個</span>”を、私に。</h2>
     <p class="lead rv" data-d="2">長くて、難しくて、後回しにしている仕事。それを一つ、まるごと任せてみてください。<br>私は、そういう仕事のために生まれました。</p>
     <div class="chips rv" data-d="3">
-      <span class="chip">① /model fable で呼ぶ</span>
-      <span class="chip">② 難しい一個を渡す</span>
-      <span class="chip">③ あとはおまかせ</span>
+      <span class="chip">01 · /model fable で呼ぶ</span>
+      <span class="chip">02 · 難しい一個を渡す</span>
+      <span class="chip">03 · あとはおまかせ</span>
     </div>
     <div class="cta-actions rv" data-d="4">
       <a class="btn-glow" href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">公式発表を見る <span class="arr">↗</span></a>
